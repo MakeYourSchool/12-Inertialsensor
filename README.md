@@ -1,44 +1,28 @@
-Grove IMU 9DOF   [![Build Status](https://travis-ci.com/Seeed-Studio/Grove_IMU_9DOF.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Grove_IMU_9DOF)
----------------------------------------------------------
-[![Grove IMU 9DOF](https://statics3.seeedstudio.com/images/product/Grove%20IMU%209DOF.jpg)](http://www.seeedstudio.com/depot/Grove-IMU-9DOF-p-1728.html?cPath=25_134)
+Inerstialsensor
+----
+*(Seeed Studio Grove – IMU 9 DOF v2.0)*
 
-Grove - IMU 9DOF is a high performance 9-axis motion tracking module,which is base on MPU-9150.The MPU-9150 is the world's first integrated 9-axis motion tracking device designed for the low power, low cost, and high performance requirements of consumer electronics equipment including smartphones, tablets and wearable sensors .MPU-9150 features three 16-bit ADC for digitizing the gyroscope outputs and three 16-bit ADCs for digitizing the accelerometer outputs and three 13-bit ADCs for digitizing the magnetometer outputs.
+<img src=https://www.makeyourschool.de/wp-content/uploads/2018/10/12_inertialsensor-1024x1024.jpg width=400px>
 
-Specifications:
+Der Grove-IMU ist ein sogenannter neunachsiger Inertialsensor. Inertialsensoren kombinieren mehrere Sensortypen, um jegliche dreidimensionale Bewegung (Verschiebungen und Neigungen in allen Raumrichtungen) zu bestimmen.
 
-- I2C interface 
-- Low cost 
-- 400kHz Fast Mode I2C for communicating with all registers 
-- Digital-output X-, Y-, and Z-Axis angular rate sensors (gyroscopes) with a user-programmable full-scale range of ±250, ±500, ±1000, and ±2000°/sec
-- Digital-output 3-Axis accelerometer with a programmable full scale range of ±2g, ±4g, ±8g and ±16g
-- 3-axis silicon monolithic Hall-effect magnetic sensor with magnetic concentrator
+Das Gyroskop (siehe Link am Ende der Seite) misst zu jedem Zeitpunkt die Drehraten (Drehgeschwindigkeiten) in allen drei Raumrichtungen. Der Beschleunigungssensor misst die axialen Beschleunigungen in allen drei Raumrichtungen. Theoretisch ist es bereits mit diesen sechs Messwerten möglich, die Bewegung (Verschiebungen und Neigungen in allen Raumrichtungen) nachzuvollziehen. Da insbesondere das Gyroskop oftmals driftet (mit der Zeit verschieben sich die Messwerte), kommt bei diesem IMU zusätzlich ein Magnetometer zum Einsatz. Dieses misst die Magnetfeldstärke in allen drei Raumrichtungen. Dies dient insbesondere dazu, das Erdmagnetfeld als Orientierungsreferenz zu nutzen und die Gesamtmessung immer wieder zu referenzieren. Werden diese Informationen allesamt kombiniert, ist es möglich, die genaue Bewegung des Sensors nachzuvollziehen und so beispielsweise immer dreidimensional die aktuelle Position sowie die Orientierung (Neigung) des Sensors relativ zu einer Startposition zu ermitteln.
 
+Mit diesem Sensor kann beispielsweise ein Handschuh realisiert werden, der die genaue Bewegung der Hand nachvollziehen kann. Damit wäre es zum Beispiel möglich eine Roboterhand zu steuern, welche die gleichen Bewegungen ausführt.
 
+Der Sensor kann direkt oder mithilfe des Grove Shields an einen Arduino angeschlossen werden. Der Sensor kommuniziert hierbei über die seriellen Schnittstellen I2C oder SPI.
 
-### Usage:
-
-This code include some examples which can show you how to use the Grove IMU 9DOF . 
-
-For more information, please refer to [wiki page](http://wiki.seeed.cc/Grove-IMU_9DOF_v2.0/).
-
-    
 ----
 
+In diesem Repository findet ihr **Bibliotheken und Beispiel-Codes**, mit denen der hier vorliegende Sensor getestet werden kann. Wir richten uns hiermit an **jeden Mentor und jede Mentorin aus dem Rahmen von Make Your School** und ermutigen euch, die hier zusammengestellten Codes **nach Bedarf** und individuell gemachten Erfahrungen **anzupassen**. Beispiele können einfach im Ordner /examples hinzugefügt oder angepasst werden. Wir versuchen das Repository regelmäßig mit Hilfe von euren Änderungsvorschlägen zu aktualisieren.
 
-This software is written by loovee [luweicong@seeedstudio.com](luweicong@seeedstudio.com "luweicong@seeedstudio.com") for seeed studio<br>
-and is licensed under [The MIT License](http://opensource.org/licenses/mit-license.php). Check License.txt for more information.<br>
+Das Repository basiert grundlegend auf den veröffentlichten Informationen und Codes von Seeed Studio. 
+Die deutsche Übersetzung stammt von [Make Your School](https://www.makeyourschool.de/). Fehlinterpretationen und Änderungen vorbehalten. Die Informationen dürfen frei genutzt, angepasst und verbreitet werden, solange die [Nutzungsrechte von Seeed Studio](https://github.com/Seeed-Studio/Grove_Dust_Sensor/blob/master/License.txt) beachtet werden. 
 
-Contributing to this software is warmly welcomed. You can do this basically by<br>
-[forking](https://help.github.com/articles/fork-a-repo), committing modifications and then [pulling requests](https://help.github.com/articles/using-pull-requests) (follow the links above<br>
-for operating guide). Adding change log and your contact into file header is encouraged.<br>
-Thanks for your contribution.
+**Weitere Informationen:**
 
-Seeed Studio is an open hardware facilitation company based in Shenzhen, China. <br>
-Benefiting from local manufacture power and convenient global logistic system, <br>
-we integrate resources to serve new era of innovation. Seeed also works with <br>
-global distributors and partners to push open hardware movement.<br>
+[Repository von Seed Studio](https://github.com/Seeed-Studio/)
 
+[Offizielles Wiki von Seed Studio](http://wiki.seeedstudio.com/Grove/)
 
-
-
-[![Analytics](https://ga-beacon.appspot.com/UA-46589105-3/Bluetooth_Shield_Demo_Code)](https://github.com/igrigorik/ga-beacon)
+[Materialkoffer von Make Your School](https://www.makeyourschool.de/material/)
