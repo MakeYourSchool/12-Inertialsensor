@@ -25,8 +25,8 @@ Das Repository basiert grundlegend auf den veröffentlichten Informationen und C
 
 **Weitere Informationen:**
 
-[Repository von Seed Studio](https://github.com/Seeed-Studio/Grove_IMU_9DOF)
+[Repository von Seeed Studio](https://github.com/Seeed-Studio/Grove_IMU_9DOF)
 
-[Offizielles Wiki von Seed Studio](http://wiki.seeedstudio.com/Grove-IMU_9DOF_v2.0/)
+[Offizielles Wiki von Seeed Studio](http://wiki.seeedstudio.com/Grove-IMU_9DOF_v2.0/)
 
 [Materialkoffer von *Make Your School*](https://www.makeyourschool.de/material/intertialsensor/)
